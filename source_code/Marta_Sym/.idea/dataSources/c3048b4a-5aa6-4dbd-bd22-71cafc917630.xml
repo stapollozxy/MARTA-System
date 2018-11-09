@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="testdb@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="testdb">
+      <ObjectId>16714</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12641</ObjectId>
+    </database>
+    <database id="4" parent="1" name="martadb">
+      <ObjectId>16607</ObjectId>
+    </database>
+    <role id="5" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="6" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-04-21.09:07:41.510</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1222</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="7" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="information_schema">
+      <ObjectId>12349</ObjectId>
+    </schema>
+    <table id="12" parent="6" name="apcdata">
+      <ObjectId>24630</ObjectId>
+      <StateNumber>1210</StateNumber>
+    </table>
+    <table id="13" parent="6" name="apcdata_source1">
+      <ObjectId>24673</ObjectId>
+      <StateNumber>1221</StateNumber>
+    </table>
+    <view id="14" parent="6" name="apcdata_activity_only">
+      <ObjectId>24636</ObjectId>
+      <StateNumber>1212</StateNumber>
+    </view>
+    <view id="15" parent="6" name="apcdata_bus_distributions">
+      <ObjectId>24648</ObjectId>
+      <StateNumber>1215</StateNumber>
+    </view>
+    <view id="16" parent="6" name="apcdata_rider_distributions">
+      <ObjectId>24652</ObjectId>
+      <StateNumber>1216</StateNumber>
+    </view>
+    <view id="17" parent="6" name="apcdata_routelist_oneway">
+      <ObjectId>24657</ObjectId>
+      <StateNumber>1217</StateNumber>
+    </view>
+    <view id="18" parent="6" name="apcdata_routes">
+      <ObjectId>24661</ObjectId>
+      <StateNumber>1218</StateNumber>
+    </view>
+    <view id="19" parent="6" name="apcdata_source">
+      <ObjectId>24644</ObjectId>
+      <StateNumber>1214</StateNumber>
+    </view>
+    <view id="20" parent="6" name="apcdata_stops">
+      <ObjectId>24665</ObjectId>
+      <StateNumber>1219</StateNumber>
+    </view>
+    <view id="21" parent="6" name="apcdata_travel_time">
+      <ObjectId>24679</ObjectId>
+      <StateNumber>1222</StateNumber>
+    </view>
+    <view id="22" parent="6" name="location_checks">
+      <ObjectId>24669</ObjectId>
+      <StateNumber>1220</StateNumber>
+    </view>
+    <view id="23" parent="6" name="unique_stopid_per_name">
+      <ObjectId>24640</ObjectId>
+      <StateNumber>1213</StateNumber>
+    </view>
+    <column id="24" parent="12" name="calendar_day">
+      <Position>1</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="25" parent="12" name="route">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="26" parent="12" name="route_name">
+      <Position>3</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="27" parent="12" name="direction">
+      <Position>4</Position>
+      <DataType>varchar(12)|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="28" parent="12" name="stop_id">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="29" parent="12" name="stop_name">
+      <Position>6</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="30" parent="12" name="arrival_time">
+      <Position>7</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <column id="31" parent="12" name="departure_time">
+      <Position>8</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <column id="32" parent="12" name="ons">
+      <Position>9</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="33" parent="12" name="offs">
+      <Position>10</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="34" parent="12" name="latitude">
+      <Position>11</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="35" parent="12" name="longitude">
+      <Position>12</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="36" parent="12" name="vehicle_number">
+      <Position>13</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1210</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="37" parent="13" name="calendar_day">
+      <Position>1</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="38" parent="13" name="route">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="39" parent="13" name="route_name">
+      <Position>3</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="40" parent="13" name="direction">
+      <Position>4</Position>
+      <DataType>varchar(12)|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="41" parent="13" name="min_stop_id">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="42" parent="13" name="stop_name">
+      <Position>6</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="43" parent="13" name="arrival_time">
+      <Position>7</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <column id="44" parent="13" name="departure_time">
+      <Position>8</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <column id="45" parent="13" name="ons">
+      <Position>9</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="46" parent="13" name="offs">
+      <Position>10</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="47" parent="13" name="latitude">
+      <Position>11</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="48" parent="13" name="longitude">
+      <Position>12</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="49" parent="13" name="vehicle_number">
+      <Position>13</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="50" parent="13" name="row_number">
+      <Position>14</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1221</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="51" parent="14" name="calendar_day">
+      <Position>1</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="52" parent="14" name="route">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="53" parent="14" name="route_name">
+      <Position>3</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="54" parent="14" name="direction">
+      <Position>4</Position>
+      <DataType>varchar(12)|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="55" parent="14" name="stop_id">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="56" parent="14" name="stop_name">
+      <Position>6</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="57" parent="14" name="arrival_time">
+      <Position>7</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="58" parent="14" name="departure_time">
+      <Position>8</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="59" parent="14" name="ons">
+      <Position>9</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="60" parent="14" name="offs">
+      <Position>10</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="61" parent="14" name="latitude">
+      <Position>11</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="62" parent="14" name="longitude">
+      <Position>12</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="63" parent="14" name="vehicle_number">
+      <Position>13</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1212</StateNumber>
+    </column>
+    <column id="64" parent="15" name="route">
+      <Position>1</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1215</StateNumber>
+    </column>
+    <column id="65" parent="15" name="min_buses">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1215</StateNumber>
+    </column>
+    <column id="66" parent="15" name="avg_buses">
+      <Position>3</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1215</StateNumber>
+    </column>
+    <column id="67" parent="15" name="max_buses">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1215</StateNumber>
+    </column>
+    <column id="68" parent="16" name="min_stop_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="69" parent="16" name="route">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="70" parent="16" name="time_slot">
+      <Position>3</Position>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="71" parent="16" name="min_ons">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="72" parent="16" name="avg_ons">
+      <Position>5</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="73" parent="16" name="max_ons">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="74" parent="16" name="min_offs">
+      <Position>7</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="75" parent="16" name="avg_offs">
+      <Position>8</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="76" parent="16" name="max_offs">
+      <Position>9</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1216</StateNumber>
+    </column>
+    <column id="77" parent="17" name="route">
+      <Position>1</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1217</StateNumber>
+    </column>
+    <column id="78" parent="17" name="min_stop_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1217</StateNumber>
+    </column>
+    <column id="79" parent="18" name="route">
+      <Position>1</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1218</StateNumber>
+    </column>
+    <column id="80" parent="18" name="route_name">
+      <Position>2</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1218</StateNumber>
+    </column>
+    <column id="81" parent="19" name="calendar_day">
+      <Position>1</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="82" parent="19" name="route">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="83" parent="19" name="route_name">
+      <Position>3</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="84" parent="19" name="direction">
+      <Position>4</Position>
+      <DataType>varchar(12)|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="85" parent="19" name="min_stop_id">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="86" parent="19" name="stop_name">
+      <Position>6</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="87" parent="19" name="arrival_time">
+      <Position>7</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="88" parent="19" name="departure_time">
+      <Position>8</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="89" parent="19" name="ons">
+      <Position>9</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="90" parent="19" name="offs">
+      <Position>10</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="91" parent="19" name="latitude">
+      <Position>11</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="92" parent="19" name="longitude">
+      <Position>12</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="93" parent="19" name="vehicle_number">
+      <Position>13</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1214</StateNumber>
+    </column>
+    <column id="94" parent="20" name="min_stop_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1219</StateNumber>
+    </column>
+    <column id="95" parent="20" name="stop_name">
+      <Position>2</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1219</StateNumber>
+    </column>
+    <column id="96" parent="20" name="latitude">
+      <Position>3</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1219</StateNumber>
+    </column>
+    <column id="97" parent="20" name="longitude">
+      <Position>4</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1219</StateNumber>
+    </column>
+    <column id="98" parent="21" name="origin">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1222</StateNumber>
+    </column>
+    <column id="99" parent="21" name="destination">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1222</StateNumber>
+    </column>
+    <column id="100" parent="21" name="travel_time">
+      <Position>3</Position>
+      <DataType>double precision|0s</DataType>
+      <StateNumber>1222</StateNumber>
+    </column>
+    <column id="101" parent="22" name="min_stop_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1220</StateNumber>
+    </column>
+    <column id="102" parent="22" name="stop_name">
+      <Position>2</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1220</StateNumber>
+    </column>
+    <column id="103" parent="22" name="distance_diff">
+      <Position>3</Position>
+      <DataType>numeric|0s</DataType>
+      <StateNumber>1220</StateNumber>
+    </column>
+    <column id="104" parent="23" name="min_stop_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1213</StateNumber>
+    </column>
+    <column id="105" parent="23" name="min_stop_name">
+      <Position>2</Position>
+      <DataType>varchar(125)|0s</DataType>
+      <StateNumber>1213</StateNumber>
+    </column>
+  </database-model>
+</dataSource>

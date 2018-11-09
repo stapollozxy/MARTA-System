@@ -1,0 +1,29 @@
+
+.register {
+    display: flex;
+    justify-content: center;
+}
+.singlesim {
+    display: flex;
+    justify-content: left;
+}
+.multisim {
+    display: flex;
+    justify-content: left;
+}
+.log {
+    display: flex;
+    justify-content: space-around;
+}
+.responselog {
+    display: flex;
+    justify-content:center;
+}
+.report {
+    display: flex;
+    justify-content:center;
+}
+.addbus {
+    display: flex;
+    justify-content:left;
+}
