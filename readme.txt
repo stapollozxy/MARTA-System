@@ -1,9 +1,3 @@
-Team 16 info:
-Zhang, Kaidi	kzhang346@gatech.edu
-Li, Houbao	hli619@gatech.edu
-Wang, Tong	twang423@gatech.edu
-Zhang, Xinyu	xzhang755@gatech.edu
-Han, Ruochen	rhan47@gatech.edu
 
 Backend Java code: 
 /source_code/Marta_Sym/src/edu
