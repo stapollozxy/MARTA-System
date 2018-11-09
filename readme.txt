@@ -1,3 +1,5 @@
+The files are deleted to avoid similar project in Gatech.
+
 Team 16 info:
 Zhang, Kaidi	kzhang346@gatech.edu
 Li, Houbao	hli619@gatech.edu
